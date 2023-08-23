@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+   <TITLE>liste-publi</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<CENTER><IMG SRC="http://www.math.u-psud.fr/icones/ppp/publi-ico.jpg" ALT="Publications" NOSAVE HEIGHT=102 WIDTH=95 ALIGN=ABSCENTER><B><FONT SIZE=+1><FONT COLOR="#FF6666">P</FONT>age
+<FONT COLOR="#FF6666">P</FONT>ersonnelle <FONT COLOR="#FF6666">P</FONT>rofessionnelle</FONT></B></CENTER>
+
+<CENTER>
+<HR WIDTH="100%"></CENTER>
+<B>Ma liste de publications :</B>
+<BR>&nbsp;
+<OL>
+<LI>
+Publication1</LI>
+
+<LI>
+Publication2</LI>
+
+<LI>
+Publication3</LI>
+
+<LI>
+...</LI>
+</OL>
+
+<HR WIDTH="100%">
+<CENTER><A HREF="javascript:history.back()"><IMG SRC="http://www.math.u-psud.fr/icones/ppp/GAUCHE.gif" ALT="Précédent" NOSAVE BORDER=0 HEIGHT=52 WIDTH=52 ALIGN=ABSCENTER></A>&nbsp;&nbsp;
+<B><FONT FACE="Graphos"><FONT SIZE=+1><A HREF="http://www.math.u-psud.fr"><FONT COLOR="#000099">D&Eacute;PARTEMENT</FONT>
+<FONT COLOR="#3333FF">DE</FONT> <FONT COLOR="#33CCFF">MATH&Eacute;MATIQUES</FONT>
+<FONT COLOR="#66FFFF">D'ORSAY</FONT></A><FONT COLOR="#66FFFF">&nbsp;</FONT></FONT></FONT></B><A HREF="http://www.u-psud.fr"><IMG SRC="http://www.math.u-psud.fr/icones/ppp/Logouniv.gif" ALT="Université Paris-Sud" NOSAVE BORDER=0 HEIGHT=100 WIDTH=100 ALIGN=ABSCENTER></A></CENTER>
+
+</BODY>
+</HTML>
