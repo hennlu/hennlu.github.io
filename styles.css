@@ -1,0 +1,97 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+li {
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+}
+
+#global {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+#contenu h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer address {
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container {
+        display: flex;
+        gap: 300px; /* Adds equal horizontal spacing between images */
+    }
+footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+    position: relative; /* Required for pseudo-element positioning */
+    font-weight: bold;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Position below the text */
+    width: 0;
+    height: 2px;
+    background: #1a73e8;
+    transition: width 0.3s ease-in-out; /* Smooth expand effect */
+}
+
+a:hover::after {
+    width: 100%; /* Expand underline */
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: #111;
+}
+
+
