@@ -20,6 +20,8 @@ table {
     margin: 0 auto;
     max-width: 1200px;
     padding: 20px;
+    background-color: #f9f9f9; /* Utilisez la même couleur ici si nécessaire */
+    padding: 20px; /* Pour donner de l'espace entre le contenu et les bords */
 }
 
 #contenu h1 {
@@ -103,5 +105,6 @@ a:hover::after {
     margin: 20px 0; /* Space around the title */
     font-size: 1.5em; /* Adjust font size */
 }
+
 
 
