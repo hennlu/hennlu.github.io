@@ -39,8 +39,10 @@ footer address {
 }
 
 .image-container {
-        display: flex;
-        gap: 300px; /* Adds equal horizontal spacing between images */
+ justify-content: center; /* Centers logos horizontally */
+    align-items: center; /* Aligns logos vertically */
+    gap: 230px; /* Adds space between logos */
+    display: flex
     }
 footer p {
     text-align: center;
@@ -92,6 +94,14 @@ a:hover::after {
 
 .navigation li a:hover {
     background-color: #111;
+}
+
+.section-title {
+    background-color: #333; /* Matches nav bar */
+    color: white; /* White text */
+    padding: 10px; /* Add some padding */
+    margin: 20px 0; /* Space around the title */
+    font-size: 1.5em; /* Adjust font size */
 }
 
 
