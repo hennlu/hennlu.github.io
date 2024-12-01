@@ -80,6 +80,9 @@ a:hover::after {
     padding: 0;
     background-color: #333;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navigation li {
@@ -106,5 +109,22 @@ a:hover::after {
     font-size: 1.5em; /* Adjust font size */
 }
 
+.language-switcher {
+    display: flex; /* Pour aligner les drapeaux côte à côte */
+    gap: 8px; /* Espacement entre les drapeaux */
+    align-items: center;
+    margin-right: 16px; /* Espacement avec les autres éléments */
+}
+
+.language-switcher img {
+    width: 24px; /* Taille des drapeaux */
+    height: auto;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.language-switcher img:hover {
+    opacity: 0.8; /* Effet visuel au survol */
+}
 
 
