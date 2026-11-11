@@ -1,0 +1,114 @@
+[
+  {
+    "id": "2607.06512",
+    "year": 2026,
+    "title": "Commutativity of nilpotent cohomological Hall algebras of A²",
+    "authors": "Lucien Hennecart",
+    "summary": "Commutativity of fully nilpotent and seminilpotent CoHAs of the affine plane."
+  },
+  {
+    "id": "2607.01355",
+    "year": 2026,
+    "title": "Hecke operators on symplectic surfaces and χ-independence",
+    "authors": "Ben Davison, Lucien Hennecart, Tasuki Kinjo, Olivier Schiffmann, Eric Vasserot",
+    "summary": "Hecke operators, BPS cohomology and χ-independence on symplectic surfaces."
+  },
+  {
+    "id": "2602.18102",
+    "year": 2026,
+    "title": "Degenerations of CoHAs of 2-Calabi–Yau categories",
+    "authors": "Lucien Hennecart, Shivang Jindal",
+    "summary": "Filtrations and degenerations of CoHAs in terms of current BPS Lie algebras."
+  },
+  {
+    "id": "2509.21298",
+    "year": 2025,
+    "title": "Strong cohomological integrality for symmetric stacks",
+    "authors": "Lucien Hennecart, Tasuki Kinjo",
+    "summary": "An integrality theorem for symmetric stacks and consequences for 0-shifted symplectic stacks."
+  },
+  {
+    "id": "2505.09483",
+    "year": 2025,
+    "title": "Cohomological Mackey formula for quotient stacks",
+    "authors": "Lucien Hennecart"
+  },
+  {
+    "id": "2408.15786",
+    "year": 2024,
+    "title": "Cohomological integrality for symmetric quotient stacks",
+    "authors": "Lucien Hennecart"
+  },
+  {
+    "id": "2406.09218",
+    "year": 2024,
+    "title": "Cohomological integrality for weakly symmetric representations of reductive groups",
+    "authors": "Lucien Hennecart",
+    "venue": "Journal of the Institute of Mathematics of Jussieu (2026)",
+    "journal": "https://www.cambridge.org/core/journals/journal-of-the-institute-of-mathematics-of-jussieu/article/cohomological-integrality-for-weakly-symmetric-representations-of-reductive-groups/99FC8F2687FDEFD885A5DF2E2DFCDD3A"
+  },
+  {
+    "id": "2307.09920",
+    "year": 2023,
+    "title": "Nonabelian Hodge isomorphisms for stacks and cohomological Hall algebras",
+    "authors": "Lucien Hennecart"
+  },
+  {
+    "id": "2303.12592",
+    "year": 2023,
+    "title": "BPS algebras and generalised Kac–Moody algebras from 2-Calabi–Yau categories",
+    "authors": "Ben Davison, Lucien Hennecart, Sebastian Schlegel Mejia"
+  },
+  {
+    "id": "2212.07668",
+    "year": 2022,
+    "title": "BPS Lie algebras for totally negative 2-Calabi–Yau categories and nonabelian Hodge theory for stacks",
+    "authors": "Ben Davison, Lucien Hennecart, Sebastian Schlegel Mejia"
+  },
+  {
+    "id": "2209.06552",
+    "year": 2022,
+    "title": "Geometric realisations of the unipotent enveloping algebra of a quiver",
+    "authors": "Lucien Hennecart",
+    "venue": "Advances in Mathematics 441 (2024)",
+    "journal": "https://www.sciencedirect.com/science/article/pii/S0001870824000513"
+  },
+  {
+    "id": "2208.07738",
+    "year": 2022,
+    "title": "A quiver analogue of Higman's conjecture",
+    "authors": "Lucien Hennecart, Nikolai Perry"
+  },
+  {
+    "id": "2101.03813",
+    "year": 2021,
+    "title": "Perverse sheaves with nilpotent singular support on the stack of coherent sheaves on an elliptic curve",
+    "authors": "Lucien Hennecart",
+    "venue": "Transformation Groups 29 (2024)"
+  },
+  {
+    "id": "2006.12780",
+    "year": 2020,
+    "title": "Microlocal characterization of Lusztig sheaves for affine and g-loops quivers",
+    "authors": "Lucien Hennecart",
+    "venue": "Representation Theory 26 (2022)",
+    "journal": "https://www.ams.org/journals/ert/2022-26-02/S1088-4165-2022-00595-4/"
+  },
+  {
+    "id": "2003.06929",
+    "year": 2020,
+    "title": "Asymptotic behaviour of Kac polynomials",
+    "authors": "Lucien Hennecart",
+    "venue": "Experimental Mathematics 32 (2023)",
+    "journal": "https://www.tandfonline.com/doi/full/10.1080/10586458.2021.1926012",
+    "code": "https://github.com/hennlu/kac-polynomials"
+  },
+  {
+    "id": "1903.04378",
+    "year": 2019,
+    "title": "Isotropic cuspidal functions in the Hall algebra of a quiver",
+    "authors": "Lucien Hennecart",
+    "venue": "International Mathematics Research Notices",
+    "journal": "https://academic.oup.com/imrn/advance-article/doi/10.1093/imrn/rnz173/5542021"
+  }
+]
