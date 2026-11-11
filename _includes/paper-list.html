@@ -1,0 +1,15 @@
+{% assign p_limit = include.limit | default: 99 %}
+<ol class="paper-list">
+{% for p in site.data.publications limit:p_limit %}
+  <li id="paper-{{ p.id }}">
+    <div class="paper-title"><a href="https://arxiv.org/abs/{{ p.id }}">{{ p.title | escape }}</a></div>
+    <p class="paper-meta">{{ p.authors | escape }} · {{ p.year }}{% if p.venue %} · <strong>{{ p.venue | escape }}</strong>{% endif %}</p>
+    {% if include.summaries and p.summary %}<p class="muted">{{ p.summary | escape }}</p>{% endif %}
+    <div class="paper-links">
+      <a href="https://arxiv.org/abs/{{ p.id }}">arXiv:{{ p.id }}</a>
+      {% if p.journal %}<a href="{{ p.journal }}">{% if page.lang == 'fr' %}Revue{% else %}Journal{% endif %}</a>{% endif %}
+      {% if p.code %}<a href="{{ p.code }}">Code</a>{% endif %}
+    </div>
+  </li>
+{% endfor %}
+</ol>

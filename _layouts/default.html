@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#183449">
+  <meta name="author" content="Lucien Hennecart">
+  <meta name="google-site-verification" content="zZASAiOiau6VHMWknDStDRLurWrZzdgsEpn6HDWCHQo">
+  <title>{{ page.title | escape }} | Lucien Hennecart</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% if page.alternate %}<link rel="alternate" hreflang="{% if page.lang == 'fr' %}en{% else %}fr{% endif %}" href="{{ page.alternate | absolute_url }}">{% endif %}
+  <link rel="alternate" hreflang="{{ page.lang | default: 'en' }}" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lucien Hennecart">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ page.description | default: site.description | strip_html | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/photo.jpg' | absolute_url }}">
+  <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+  {% if page.profile %}<script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Lucien Hennecart","jobTitle":"Chargé de recherche CNRS","url":"https://hennlu.github.io/","affiliation":[{"@type":"Organization","name":"CNRS","url":"https://www.cnrs.fr/"},{"@type":"Organization","name":"LAMFA, Université de Picardie Jules Verne","url":"https://www.lamfa.u-picardie.fr/"}],"sameAs":["https://orcid.org/0000-0002-9440-6823","https://scholar.google.com/citations?hl=en&user=E1xtWyUAAAAJ","https://arxiv.org/a/hennecart_l_1.html","https://github.com/hennlu"]}
+  </script>{% endif %}
+</head>
+<body>
+  <a class="skip-link" href="#main">{% if page.lang == 'fr' %}Aller au contenu{% else %}Skip to content{% endif %}</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{% if page.lang == 'fr' %}{{ '/index-fr.html' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" aria-label="Lucien Hennecart — {% if page.lang == 'fr' %}accueil{% else %}home{% endif %}">
+        <span class="brand-mark" aria-hidden="true">LH<span>.</span></span>
+        <span class="brand-text">Lucien Hennecart<small>CNRS · LAMFA, Amiens</small></span>
+      </a>
+      <nav class="nav-links" aria-label="{% if page.lang == 'fr' %}Navigation principale{% else %}Main navigation{% endif %}">
+        {% if page.lang == 'fr' %}
+        <a {% if page.nav == 'home' %}aria-current="page"{% endif %} href="{{ '/index-fr.html' | relative_url }}">Accueil</a>
+        <a {% if page.nav == 'research' %}aria-current="page"{% endif %} href="{{ '/research-fr.html' | relative_url }}">Recherche</a>
+        <a {% if page.nav == 'publications' %}aria-current="page"{% endif %} href="{{ '/publications-fr.html' | relative_url }}">Publications</a>
+        <a {% if page.nav == 'talks' %}aria-current="page"{% endif %} href="{{ '/talks-fr.html' | relative_url }}">Exposés</a>
+        <a {% if page.nav == 'teaching' %}aria-current="page"{% endif %} href="{{ '/teaching-fr.html' | relative_url }}">Enseignement</a>
+        <a {% if page.nav == 'anr' %}aria-current="page"{% endif %} href="{{ '/anr-fr.html' | relative_url }}">ReSCoS</a>
+        {% else %}
+        <a {% if page.nav == 'home' %}aria-current="page"{% endif %} href="{{ '/' | relative_url }}">Home</a>
+        <a {% if page.nav == 'research' %}aria-current="page"{% endif %} href="{{ '/research.html' | relative_url }}">Research</a>
+        <a {% if page.nav == 'publications' %}aria-current="page"{% endif %} href="{{ '/publications.html' | relative_url }}">Publications</a>
+        <a {% if page.nav == 'talks' %}aria-current="page"{% endif %} href="{{ '/talks.html' | relative_url }}">Talks</a>
+        <a {% if page.nav == 'teaching' %}aria-current="page"{% endif %} href="{{ '/teaching.html' | relative_url }}">Teaching</a>
+        <a {% if page.nav == 'anr' %}aria-current="page"{% endif %} href="{{ '/anr.html' | relative_url }}">ReSCoS</a>
+        {% endif %}
+        <a class="lang-link" lang="{% if page.lang == 'fr' %}en{% else %}fr{% endif %}" href="{{ page.alternate | default: '/index-fr.html' | relative_url }}">{% if page.lang == 'fr' %}EN{% else %}FR{% endif %}</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">{{ content }}</main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div><strong>Lucien Hennecart</strong><p>{% if page.lang == 'fr' %}Chargé de recherche CNRS · LAMFA, Amiens{% else %}CNRS Researcher · LAMFA, Amiens{% endif %}</p>
+          <a href="mailto:Lucien.Hennecart@u-picardie.fr">Lucien.Hennecart@u-picardie.fr</a></div>
+        <div class="footer-links"><a href="{% if page.lang == 'fr' %}{{ '/cv-fr.html' | relative_url }}{% else %}{{ '/cv.html' | relative_url }}{% endif %}">CV</a><a href="{% if page.lang == 'fr' %}{{ '/students-fr.html' | relative_url }}{% else %}{{ '/students.html' | relative_url }}{% endif %}">{% if page.lang == 'fr' %}Étudiants et postdocs{% else %}Students & postdocs{% endif %}</a><a href="{% if page.lang == 'fr' %}{{ '/music-fr.html' | relative_url }}{% else %}{{ '/music.html' | relative_url }}{% endif %}">{% if page.lang == 'fr' %}Musique{% else %}Music{% endif %}</a></div>
+      </div>
+      <div class="institution-logos" aria-label="{% if page.lang == 'fr' %}Établissements{% else %}Institutions{% endif %}">
+        <a href="https://www.cnrs.fr/" aria-label="CNRS"><img src="{{ '/logo-cnrs.svg' | relative_url }}" alt="CNRS" loading="lazy"></a>
+        <a href="https://www.lamfa.u-picardie.fr/" aria-label="LAMFA"><img src="{{ '/logo-lamfa.svg' | relative_url }}" alt="LAMFA" loading="lazy"></a>
+        <a href="https://www.u-picardie.fr/" aria-label="Université de Picardie Jules Verne"><img src="{{ '/Logoupjv-bleu.png' | relative_url }}" alt="Université de Picardie Jules Verne" loading="lazy"></a>
+      </div>
+      <p class="footer-bottom">© {{ site.time | date: '%Y' }} Lucien Hennecart · {% if page.lang == 'fr' %}Mise à jour des pages principales : novembre 2026{% else %}Main pages updated: November 2026{% endif %} · <a href="https://github.com/hennlu/hennlu.github.io">{% if page.lang == 'fr' %}Code source{% else %}Source on GitHub{% endif %}</a></p>
+    </div>
+  </footer>
+</body>
+</html>
