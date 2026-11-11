@@ -101,3 +101,6 @@ hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
 @media(max-width:750px){.container{width:min(var(--width),calc(100% - 2rem))}.hero-grid{grid-template-columns:1fr}.hero-media{max-width:260px;justify-self:start;grid-row:1}.hero{padding-top:2.5rem}.grid,.grid.three{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.timeline li{grid-template-columns:1fr;gap:.15rem}.card{padding:1.2rem}.page-intro{padding:2.7rem 0 1.5rem}.footer-top{display:block}.footer-links{margin-top:1rem}.nav-links a{font-size:.84rem;padding:.5rem}.brand-mark{width:2.6rem;height:2.6rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.site-header,.skip-link,.site-footer,.button{display:none!important}body{font-size:11pt;color:#000;background:#fff}.container{width:100%}.hero,.page-intro{padding:1rem 0;background:#fff}.section{padding:1rem 0}.card{box-shadow:none;break-inside:avoid}}
+
+/* Ensure archival HTML pages still have comfortable margins and clear keyboard focus. */
+:focus-visible{outline:3px solid #b65c00;outline-offset:3px}

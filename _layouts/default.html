@@ -58,7 +58,7 @@
       <div class="footer-top">
         <div><strong>Lucien Hennecart</strong><p>{% if page.lang == 'fr' %}Chargé de recherche CNRS · LAMFA, Amiens{% else %}CNRS Researcher · LAMFA, Amiens{% endif %}</p>
           <a href="mailto:Lucien.Hennecart@u-picardie.fr">Lucien.Hennecart@u-picardie.fr</a></div>
-        <div class="footer-links"><a href="{{ '/cv.html' | relative_url }}">CV</a><a href="{{ '/students.html' | relative_url }}">{% if page.lang == 'fr' %}Étudiants et postdocs{% else %}Students & postdocs{% endif %}</a><a href="{{ '/music.html' | relative_url }}">{% if page.lang == 'fr' %}Musique{% else %}Music{% endif %}</a></div>
+        <div class="footer-links"><a href="{% if page.lang == 'fr' %}{{ '/cv-fr.html' | relative_url }}{% else %}{{ '/cv.html' | relative_url }}{% endif %}">CV</a><a href="{% if page.lang == 'fr' %}{{ '/students-fr.html' | relative_url }}{% else %}{{ '/students.html' | relative_url }}{% endif %}">{% if page.lang == 'fr' %}Étudiants et postdocs{% else %}Students & postdocs{% endif %}</a><a href="{% if page.lang == 'fr' %}{{ '/music-fr.html' | relative_url }}{% else %}{{ '/music.html' | relative_url }}{% endif %}">{% if page.lang == 'fr' %}Musique{% else %}Music{% endif %}</a></div>
       </div>
       <div class="institution-logos" aria-label="{% if page.lang == 'fr' %}Établissements{% else %}Institutions{% endif %}">
         <a href="https://www.cnrs.fr/" aria-label="CNRS"><img src="{{ '/logo-cnrs.svg' | relative_url }}" alt="CNRS" loading="lazy"></a>
