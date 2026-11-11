@@ -16,3 +16,5 @@ jobs:
           python-version: '3.12'
       - name: Validate local files and metadata
         run: python3 scripts/check_site.py
+      - name: Build static site with GitHub Pages Jekyll
+        uses: actions/jekyll-build-pages@v1
