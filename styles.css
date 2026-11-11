@@ -104,3 +104,10 @@ hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
 
 /* Ensure archival HTML pages still have comfortable margins and clear keyboard focus. */
 :focus-visible{outline:3px solid #b65c00;outline-offset:3px}
+
+/* Historic HTML pages stay accessible without changing their established URLs. */
+body.archive-page{width:min(980px,calc(100% - 2rem));margin:1.5rem auto 4rem;padding:0;overflow-wrap:anywhere}
+.archive-page .archive-nav{border-bottom:1px solid var(--line);padding:.3rem 0 1rem;margin-bottom:1.3rem;font-size:.85rem;font-weight:700}
+.archive-page .archive-nav a{margin-right:1rem}
+.archive-page .image-container{flex-wrap:wrap;gap:1.5rem}
+@media(max-width:750px){.archive-page .image-container{flex-direction:column;align-items:flex-start}}
