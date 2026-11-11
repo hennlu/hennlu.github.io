@@ -21,8 +21,8 @@ small{font-size:.83rem}
 .site-header{position:relative;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:1.4rem;min-height:85px}
 .brand{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;flex-shrink:0;color:var(--ink)}
-.brand-mark{display:grid;place-items:center;background:var(--ink);color:white;font-size:1.05rem;letter-spacing:-.05em;font-weight:800;width:3.1rem;height:3.1rem;border-radius:12px}
-.brand-mark span{color:#64d6c3}
+.brand-mark{display:flex;align-items:center;justify-content:center;position:relative;background:var(--ink);color:white;font-size:1.05rem;line-height:1;letter-spacing:-.05em;font-weight:800;width:3.1rem;height:3.1rem;border-radius:12px}
+.brand-mark span{position:absolute;right:.55rem;bottom:.4rem;color:#64d6c3;font-size:.7rem;line-height:1}
 .brand-text{font-family:Georgia,serif;font-size:1.18rem;line-height:1.12;font-weight:700}
 .brand-text small{display:block;color:var(--muted);font:500 .73rem/1.7 system-ui,sans-serif;letter-spacing:.01em;margin-top:.18rem}
 .nav-links{display:flex;align-items:center;flex-wrap:wrap;gap:.15rem}
