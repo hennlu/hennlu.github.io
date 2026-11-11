@@ -1,130 +1,113 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-}
+/* Academic site — responsive, accessible, intentionally lightweight. */
+:root{color-scheme:light;--ink:#193249;--muted:#526476;--accent:#08796f;--accent-dark:#075c55;--paper:#f8f9f8;--white:#fff;--line:#d9e2e5;--soft:#edf4f2;--focus:#b65c00;--width:1120px;--radius:16px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:6rem}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.72 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+img,svg{max-width:100%;height:auto}
+a{color:var(--accent-dark);text-decoration-thickness:1px;text-underline-offset:.22em}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:3px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.025em;line-height:1.19;color:#12293c}
+h1{font-size:clamp(2.5rem,5vw,4.6rem);margin:0 0 1.1rem}
+h2{font-size:clamp(1.8rem,3vw,2.55rem);margin:0 0 1rem}
+h3{font-size:1.35rem;margin:0 0 .6rem}
+p{margin:.3rem 0 1rem}
+ul{padding-left:1.4rem}
+li{margin:.35rem 0}
+small{font-size:.83rem}
+.container{width:min(var(--width),calc(100% - 3rem));margin-inline:auto}
+.skip-link{position:absolute;top:-10rem;left:1rem;background:#fff;padding:.7rem 1rem;z-index:100}
+.skip-link:focus{top:.5rem}
+.site-header{position:relative;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1.4rem;min-height:85px}
+.brand{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;flex-shrink:0;color:var(--ink)}
+.brand-mark{display:grid;place-items:center;background:var(--ink);color:white;font-size:1.05rem;letter-spacing:-.05em;font-weight:800;width:3.1rem;height:3.1rem;border-radius:12px}
+.brand-mark span{color:#64d6c3}
+.brand-text{font-family:Georgia,serif;font-size:1.18rem;line-height:1.12;font-weight:700}
+.brand-text small{display:block;color:var(--muted);font:500 .73rem/1.7 system-ui,sans-serif;letter-spacing:.01em;margin-top:.18rem}
+.nav-links{display:flex;align-items:center;flex-wrap:wrap;gap:.15rem}
+.nav-links a{display:inline-flex;align-items:center;min-height:42px;border-radius:8px;padding:.45rem .62rem;font-size:.87rem;color:var(--ink);font-weight:650;text-decoration:none;white-space:nowrap}
+.nav-links a:hover,.nav-links a[aria-current="page"]{background:var(--soft);color:var(--accent-dark)}
+.nav-links .lang-link{border:1px solid var(--line);margin-left:.4rem;padding:.34rem .6rem}
+.hero{padding:clamp(3rem,7vw,6.5rem) 0 clamp(2.8rem,5vw,4.2rem);border-bottom:1px solid var(--line);background:linear-gradient(140deg,#f7faf9 0%,#eff6f3 100%)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.75fr);gap:clamp(2rem,5vw,5rem);align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent-dark);font-size:.83rem;line-height:1.5;font-weight:800;letter-spacing:.09em;text-transform:uppercase;margin-bottom:1rem}
+.lead{font-size:clamp(1.1rem,1.7vw,1.28rem);color:#385369;max-width:64ch;line-height:1.7}
+.hero-media{margin:0;max-width:360px;justify-self:end}
+.hero-media img{display:block;width:100%;aspect-ratio:4/4.4;object-fit:cover;object-position:center 42%;border-radius:18px;box-shadow:0 20px 45px rgba(16,50,70,.12)}
+.hero-media figcaption{font-size:.77rem;color:var(--muted);margin-top:.65rem}
+.action-row{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
+.button{display:inline-flex;justify-content:center;align-items:center;gap:.4rem;min-height:44px;padding:.62rem 1.12rem;border-radius:9px;font-weight:700;text-decoration:none;border:1px solid var(--accent);background:var(--accent);color:#fff}
+.button:hover{background:var(--accent-dark);color:white;border-color:var(--accent-dark)}
+.button.secondary{color:var(--accent-dark);background:transparent}
+.button.secondary:hover{background:var(--soft)}
+.page-intro{padding:4rem 0 2.2rem;background:linear-gradient(150deg,#f4faf7,#f8f9f8);border-bottom:1px solid var(--line)}
+.page-intro h1{font-size:clamp(2.3rem,4.4vw,3.85rem)}
+.page-intro .lead{margin-bottom:.6rem}
+.section{padding:clamp(2.5rem,5.5vw,4.6rem) 0}
+.section + .section{border-top:1px solid var(--line)}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1.7rem}
+.section-head h2{margin:0}
+.section-head p{margin:.2rem 0 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.15rem}
+.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem;box-shadow:0 5px 19px rgba(25,50,73,.025)}
+.card h3{font-size:1.34rem}
+.card p{color:var(--muted)}
+.card a.stretched{font-weight:700}
+.card .eyebrow{font-size:.72rem;margin-bottom:.5rem}
+.callout{background:#eaf3f0;border:1px solid #c5dcd5;padding:1.6rem 1.85rem;border-radius:var(--radius)}
+.callout h2{font-size:1.65rem;margin-bottom:.5rem}
+.callout p{margin-bottom:.3rem}
+.prose{max-width:79ch}
+.prose h2{margin-top:2rem}
+.prose h3{margin-top:1.6rem}
+.prose p,.prose li{color:#354c60}
+.prose h2:first-child{margin-top:0}
+.muted{color:var(--muted)}
+.tag{display:inline-block;padding:.16rem .55rem;background:#e8f2ee;border-radius:100px;font:750 .74rem/1.75 system-ui,sans-serif;color:#14645e;letter-spacing:.02em}
+.paper-list{list-style:none;margin:0;padding:0}
+.paper-list li{border-bottom:1px solid var(--line);padding:1.2rem 0;margin:0}
+.paper-list li:first-child{border-top:1px solid var(--line)}
+.paper-title{font-family:Georgia,serif;font-size:1.2rem;font-weight:700;line-height:1.4}
+.paper-title a{color:var(--ink)}
+.paper-meta{color:var(--muted);font-size:.88rem;margin:.35rem 0}
+.paper-links{display:flex;gap:.9rem;flex-wrap:wrap;font-size:.86rem;font-weight:700}
+.feature-list{display:grid;gap:.9rem}
+.feature{display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start;border-bottom:1px solid var(--line);padding:1rem 0}
+.feature-num{color:var(--accent);font-weight:800;font-size:.83rem}
+.feature h3{font-size:1.15rem;margin-bottom:.3rem}
+.feature p{color:var(--muted);margin:0}
+.timeline{margin:0;padding:0;list-style:none}
+.timeline li{display:grid;grid-template-columns:125px 1fr;gap:1.2rem;border-bottom:1px solid var(--line);padding:.9rem 0;margin:0}
+.timeline time{font-weight:800;color:var(--accent-dark)}
+.text-link{font-weight:700;white-space:nowrap}
+.secondary-nav{display:flex;flex-wrap:wrap;gap:.55rem;margin:1.3rem 0}
+.secondary-nav a{padding:.35rem .75rem;text-decoration:none;border:1px solid var(--line);border-radius:100px;font-size:.86rem;font-weight:650;background:#fff}
+.note{padding:.9rem 1.15rem;border-left:4px solid var(--accent);background:#edf3f1;color:#344e55;margin:1rem 0 1.7rem}
+.site-footer{background:#183449;color:#e3edf2;padding:2.4rem 0 1.3rem;margin-top:1rem}
+.site-footer a{color:#caefe4}
+.footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem;padding-bottom:1.3rem}
+.footer-top p{color:#c0d3dd;font-size:.88rem;margin:.25rem 0 .65rem}
+.footer-links{display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap;font-size:.9rem}
+.institution-logos{display:flex;gap:1.3rem;align-items:center;flex-wrap:wrap;border-top:1px solid #4d6575;padding:1.5rem 0 .5rem}
+.institution-logos a{background:white;border-radius:8px;display:grid;place-items:center;padding:.5rem;min-width:105px;height:58px}
+.institution-logos img{max-width:120px;max-height:42px;width:auto;height:auto;object-fit:contain}
+.footer-bottom{font-size:.76rem;color:#b8cbd4;border-top:1px solid #4d6575;margin-top:.8rem;padding-top:1rem}
+.archive-list{max-width:80ch;margin-top:1.3rem}
+.archive-list li{margin:.6rem 0}
+hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
+@media(max-width:1060px){.header-inner{align-items:flex-start;flex-direction:column;padding:1rem 0}.nav-links{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:.4rem}.grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:750px){.container{width:min(var(--width),calc(100% - 2rem))}.hero-grid{grid-template-columns:1fr}.hero-media{max-width:260px;justify-self:start;grid-row:1}.hero{padding-top:2.5rem}.grid,.grid.three{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.timeline li{grid-template-columns:1fr;gap:.15rem}.card{padding:1.2rem}.page-intro{padding:2.7rem 0 1.5rem}.footer-top{display:block}.footer-links{margin-top:1rem}.nav-links a{font-size:.84rem;padding:.5rem}.brand-mark{width:2.6rem;height:2.6rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.site-header,.skip-link,.site-footer,.button{display:none!important}body{font-size:11pt;color:#000;background:#fff}.container{width:100%}.hero,.page-intro{padding:1rem 0;background:#fff}.section{padding:1rem 0}.card{box-shadow:none;break-inside:avoid}}
 
-h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-}
+/* Ensure archival HTML pages still have comfortable margins and clear keyboard focus. */
+:focus-visible{outline:3px solid #b65c00;outline-offset:3px}
 
-li {
-    margin: 10px 0;
-}
-
-table {
-    width: 100%;
-}
-
-#global {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 20px;
-    background-color: #f9f9f9; /* Utilisez la même couleur ici si nécessaire */
-    padding: 20px; /* Pour donner de l'espace entre le contenu et les bords */
-}
-
-#contenu h1 {
-    font-size: 24px;
-    color: #333;
-}
-
-figure img {
-    max-width: 100%;
-    height: auto;
-}
-
-footer address {
-    font-style: normal;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.image-container {
- justify-content: center; /* Centers logos horizontally */
-    align-items: center; /* Aligns logos vertically */
-    gap: 230px; /* Adds space between logos */
-    display: flex
-    }
-footer p {
-    text-align: center;
-    font-size: 14px;
-    color: #666;
-}
-
-a {
-    color: #1a73e8;
-    text-decoration: none;
-    position: relative; /* Required for pseudo-element positioning */
-    font-weight: bold;
-}
-
-a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -3px; /* Position below the text */
-    width: 0;
-    height: 2px;
-    background: #1a73e8;
-    transition: width 0.3s ease-in-out; /* Smooth expand effect */
-}
-
-a:hover::after {
-    width: 100%; /* Expand underline */
-}
-
-.navigation {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navigation li {
-    float: left;
-}
-
-.navigation li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navigation li a:hover {
-    background-color: #111;
-}
-
-.section-title {
-    background-color: #333; /* Matches nav bar */
-    color: white; /* White text */
-    padding: 10px; /* Add some padding */
-    margin: 20px 0; /* Space around the title */
-    font-size: 1.5em; /* Adjust font size */
-}
-
-.language-switcher {
-    display: flex; /* Pour aligner les drapeaux côte à côte */
-    gap: 8px; /* Espacement entre les drapeaux */
-    align-items: center;
-    margin-right: 16px; /* Espacement avec les autres éléments */
-}
-
-.language-switcher img {
-    width: 24px; /* Taille des drapeaux */
-    height: auto;
-    vertical-align: middle;
-    cursor: pointer;
-}
-
-.language-switcher img:hover {
-    opacity: 0.8; /* Effet visuel au survol */
-}
-
-
+/* Historic HTML pages stay accessible without changing their established URLs. */
+body.archive-page{width:min(980px,calc(100% - 2rem));margin:1.5rem auto 4rem;padding:0;overflow-wrap:anywhere}
+.archive-page .archive-nav{border-bottom:1px solid var(--line);padding:.3rem 0 1rem;margin-bottom:1.3rem;font-size:.85rem;font-weight:700}
+.archive-page .archive-nav a{margin-right:1rem}
+.archive-page .image-container{flex-wrap:wrap;gap:1.5rem}
+@media(max-width:750px){.archive-page .image-container{flex-direction:column;align-items:flex-start}}

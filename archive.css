@@ -1,0 +1,12 @@
+/* Simple, readable presentation for historic talks and abstracts. */
+html{color-scheme:light}
+*,*::before,*::after{box-sizing:border-box}
+body.archive-page{width:min(900px,calc(100% - 2rem));margin:1.3rem auto 4rem;padding:0;background:white;color:#21384b;font:17px/1.72 system-ui,-apple-system,"Segoe UI",sans-serif;overflow-wrap:anywhere}
+body.archive-page h1,body.archive-page h2,body.archive-page h3{font-family:Georgia,serif;color:#193249;line-height:1.2}
+body.archive-page a{color:#0b716a;text-decoration-thickness:1px;text-underline-offset:.15em}
+body.archive-page a:focus-visible{outline:3px solid #b65c00;outline-offset:4px}
+body.archive-page img{max-width:100%;height:auto}
+body.archive-page .archive-nav{border-bottom:1px solid #d9e2e5;font-size:.87rem;font-weight:700;padding:0 0 1rem;margin:0 0 1.5rem}
+body.archive-page .archive-nav a{margin-right:.85rem}
+body.archive-page p.big{line-height:1.8}
+@media(max-width:700px){body.archive-page{font-size:16px}body.archive-page table{display:block;max-width:100%;overflow-x:auto}}

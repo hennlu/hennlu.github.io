@@ -1,0 +1,13 @@
+title: "Lucien Hennecart"
+description: "Lucien Hennecart, CNRS researcher at LAMFA (Amiens), working in geometric representation theory, cohomological Hall algebras and BPS invariants."
+url: "https://hennlu.github.io"
+baseurl: ""
+markdown: kramdown
+exclude:
+  - README.md
+  - scripts
+  - CVe
+  - model.php
+  - autre_model.php
+  - contenu.html
+  - "*.old"
