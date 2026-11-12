@@ -1,0 +1,92 @@
+[
+  {
+    "date": "2024-10-08",
+    "date_en": "8 October 2024",
+    "date_fr": "8 octobre 2024",
+    "title": "Cohomological integrality for symmetric quotient stacks",
+    "event": "Imperial College London · MAGIC Seminar",
+    "videos": [
+      {
+        "label_en": "Video 1",
+        "label_fr": "Vidéo 1",
+        "url": "https://www.youtube.com/watch?v=Umim2ekLtfc"
+      },
+      {
+        "label_en": "Video 2",
+        "label_fr": "Vidéo 2",
+        "url": "https://www.youtube.com/watch?v=UZU-Cvupve8"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-02",
+    "date_en": "2 April 2024",
+    "date_fr": "2 avril 2024",
+    "title": "The BPS sheaves and quiver varieties",
+    "event": "SLMath, Berkeley · Geometric Representation Theory Seminar",
+    "videos": [
+      {
+        "label_en": "Recording",
+        "label_fr": "Enregistrement",
+        "url": "https://vimeo.com/930305273"
+      }
+    ]
+  },
+  {
+    "date": "2024-02-19",
+    "date_en": "19–23 February 2024",
+    "date_fr": "19–23 février 2024",
+    "title": "Cohomological Hall algebras of 2-Calabi–Yau categories and applications",
+    "event": "Kansas State University · M-Seminar",
+    "videos": [
+      {
+        "label_en": "Lecture 1",
+        "label_fr": "Cours 1",
+        "url": "https://www.youtube.com/watch?v=6ZxVF1X-XAc"
+      },
+      {
+        "label_en": "Lecture 2",
+        "label_fr": "Cours 2",
+        "url": "https://www.youtube.com/watch?v=SzxhVO8mgJo"
+      },
+      {
+        "label_en": "Lecture 3",
+        "label_fr": "Cours 3",
+        "url": "https://www.youtube.com/watch?v=VCKZrMKaIYA"
+      },
+      {
+        "label_en": "Lecture 4",
+        "label_fr": "Cours 4",
+        "url": "https://www.youtube.com/watch?v=jMNSaParW3s"
+      }
+    ]
+  },
+  {
+    "date": "2023-06-05",
+    "date_en": "5 June 2023",
+    "date_fr": "5 juin 2023",
+    "title": "Nonabelian Hodge isomorphisms for stacks",
+    "event": "Vector Bundles on Algebraic Curves (VBAC) webinar",
+    "videos": [
+      {
+        "label_en": "Recording (Educast)",
+        "label_fr": "Enregistrement (Educast)",
+        "url": "https://educast.fccn.pt/vod/clips/jn1sk66l5/streaming.html?locale=en"
+      }
+    ]
+  },
+  {
+    "date": "2023-01-01",
+    "date_en": "2023",
+    "date_fr": "2023",
+    "title": "Nonabelian Hodge theory for stacks and cohomological Hall algebras",
+    "event": "Mathematical presentation (2023)",
+    "videos": [
+      {
+        "label_en": "Video",
+        "label_fr": "Vidéo",
+        "url": "https://www.youtube.com/watch?v=ktI8zJKlQDw"
+      }
+    ]
+  }
+]
