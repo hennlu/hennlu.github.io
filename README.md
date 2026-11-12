@@ -10,7 +10,8 @@ Source of the public academic website at https://hennlu.github.io/.
 - Archive URLs and existing talks/lecture PDFs are intentionally retained to avoid breaking external links.
 - The current HTML CV (`cv.html`, `cv-fr.html`) and its printable PDF (`cv2web.pdf`) describe the CNRS appointment and the 2026 publication list. Update both versions when CV details change.
 - Keep research announcements factual and avoid claiming recruitment is open until an official call exists.
-- The archive `Talks.html` retains older abstracts and slides; `talks.html` is the new overview. Its five most recent talks are shown on both `talks.html` and `talks-fr.html` from `_data/recent_talks.json`, through `_includes/recent-talks.html`. When adding a talk to the archive, also add its metadata to that JSON file so the recent-talks preview stays current; entries are sorted by `date` and only the five newest are displayed. Unused legacy PHP templates and drafts are stored under `_archive/legacy/` and excluded from the published site.
+- The archive `Talks.html` retains older abstracts and slides; `talks.html` is the new overview.
+- Video recordings are catalogued in `_data/recordings.json` and appear on the English and French talks pages through `_includes/recordings.html`. Add a video URL only once the individual recording is identified. The November 2026 M-Seminar talks currently link to the official video channel rather than to unverified individual recordings. Its five most recent talks are shown on both `talks.html` and `talks-fr.html` from `_data/recent_talks.json`, through `_includes/recent-talks.html`. When adding a talk to the archive, also add its metadata to that JSON file so the recent-talks preview stays current; entries are sorted by `date` and only the five newest are displayed. Unused legacy PHP templates and drafts are stored under `_archive/legacy/` and excluded from the published site.
 
 ## Testing
 
