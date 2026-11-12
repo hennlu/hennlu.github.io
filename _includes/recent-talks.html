@@ -8,6 +8,8 @@
       <a href="{{ talk.abstract | relative_url }}">{% if page.lang == 'fr' %}Résumé{% else %}Abstract{% endif %}</a>
       {% if talk.notes %}<a href="{{ talk.notes }}">{% if page.lang == 'fr' %}Notes (PDF){% else %}Lecture notes (PDF){% endif %}</a>{% endif %}
       {% if talk.programme %}<a href="{{ talk.programme }}">{% if page.lang == 'fr' %}Programme{% else %}Programme{% endif %}</a>{% endif %}
+      {% if talk.video %}<a href="{{ talk.video }}">{% if page.lang == 'fr' %}Vidéo{% else %}Recording{% endif %}</a>{% endif %}
+      {% if talk.video_channel %}<a href="{{ talk.video_channel }}">{% if page.lang == 'fr' %}Chaîne du M-Seminar{% else %}M-Seminar video channel{% endif %}</a>{% endif %}
     </div>
   </li>
   {% endfor %}
