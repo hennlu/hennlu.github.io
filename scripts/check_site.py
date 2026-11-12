@@ -147,7 +147,7 @@ elif talks_archive.is_file():
                 errors.append(f"Missing title/date for talk: {key}")
             for resource in meta.get("resources", []):
                 if resource.get("url"):
-                    check_path(talk_meta_path, resource["url"])
+                    check_path(talks_archive, resource["url"])
     except (ValueError, KeyError, TypeError) as exc:
         errors.append(f"Invalid talk metadata: {exc}")
 
