@@ -1,0 +1,14 @@
+{% assign recent_talks = site.data.recent_talks | sort: "date" | reverse %}
+<ol class="paper-list">
+  {% for talk in recent_talks limit:5 %}
+  <li>
+    <p class="paper-meta"><time datetime="{{ talk.date }}">{% if page.lang == 'fr' %}{{ talk.date_fr }}{% else %}{{ talk.date_en }}{% endif %}</time> · {{ talk.event | escape }}</p>
+    <div class="paper-title"><a href="{{ talk.abstract | relative_url }}">{{ talk.title | escape }}</a></div>
+    <div class="paper-links">
+      <a href="{{ talk.abstract | relative_url }}">{% if page.lang == 'fr' %}Résumé{% else %}Abstract{% endif %}</a>
+      {% if talk.notes %}<a href="{{ talk.notes }}">{% if page.lang == 'fr' %}Notes (PDF){% else %}Lecture notes (PDF){% endif %}</a>{% endif %}
+      {% if talk.programme %}<a href="{{ talk.programme }}">{% if page.lang == 'fr' %}Programme{% else %}Programme{% endif %}</a>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>
