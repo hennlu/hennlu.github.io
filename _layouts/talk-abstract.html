@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{% assign talk = site.data.talk_metadata[page.talk_key] %}
+<section class="page-intro">
+  <div class="container">
+    <p class="eyebrow">{% if page.lang == 'fr' %}Exposé de recherche{% else %}Research talk{% endif %}{% if talk.date %} · {{ talk.date | escape }}{% endif %}</p>
+    <h1>{{ page.title | escape }}</h1>
+    {% if talk.event %}<p class="lead">{{ talk.event | escape }}</p>{% endif %}
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="prose">
+      <h2>{% if page.lang == 'fr' %}Résumé{% else %}Abstract{% endif %}</h2>
+      <div class="talk-abstract-copy">{{ content }}</div>
+      {% if talk.event_url != "" or talk.resources.size > 0 %}
+      <h2>{% if page.lang == 'fr' %}Liens et documents{% else %}Links and material{% endif %}</h2>
+      <div class="paper-links">
+        {% if talk.event_url != "" %}<a href="{{ talk.event_url }}">{% if page.lang == 'fr' %}Programme{% else %}Programme{% endif %} ↗</a>{% endif %}
+        {% for resource in talk.resources %}<a href="{{ resource.url }}">{% if resource.label %}{{ resource.label | escape }}{% else %}Document{% endif %} ↗</a>{% endfor %}
+      </div>
+      {% endif %}
+      <p style="margin-top:2.2rem"><a class="text-link" href="{{ '/Talks.html' | relative_url }}">← {% if page.lang == 'fr' %}Tous les exposés{% else %}All talks{% endif %}</a></p>
+    </div>
+  </div>
+</section>

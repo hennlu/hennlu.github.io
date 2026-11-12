@@ -96,6 +96,61 @@ pdf = ROOT / "cv2web.pdf"
 if pdf.is_file() and not pdf.read_bytes().startswith(b"%PDF-"):
     errors.append("CV is not a valid PDF file header")
 
+# Talks archive: catch broken/mismatched abstracts and empty event links.
+import json
+from html import unescape
+
+talks_archive = ROOT / "Talks.html"
+talk_meta_path = ROOT / "_data" / "talk_metadata.json"
+talk_layout = ROOT / "_layouts" / "talk-abstract.html"
+if not talk_layout.is_file():
+    errors.append("Shared talk abstract layout is missing")
+if not talk_meta_path.is_file():
+    errors.append("Talk abstract metadata is missing")
+elif talks_archive.is_file():
+    try:
+        talk_meta = json.loads(talk_meta_path.read_text(encoding="utf-8"))
+        archive_text = talks_archive.read_text(encoding="utf-8")
+        if re.search(r'<a\\s+href=""', archive_text):
+            errors.append("Talks.html contains empty links")
+        entries = re.findall(r'<p class="talk-entry">([\\s\\S]*?)</p>', archive_text)
+        seen_abstracts = set()
+        for entry in entries:
+            link = re.search(r'<a\\s+href="([^"]+)"[^>]*>abstract</a>', entry)
+            if not link:
+                continue
+            target = unquote(link.group(1))
+            key = Path(target).stem
+            if key in seen_abstracts:
+                errors.append(f"Talk abstract reused in multiple archive entries: {target}")
+            seen_abstracts.add(key)
+            meta = talk_meta.get(key)
+            if not meta:
+                errors.append(f"No metadata for talk abstract: {target}")
+                continue
+            archive_title = re.search(r'<i>([\\s\\S]*?)</i>', entry)
+            if archive_title:
+                normalized_title = " ".join(unescape(re.sub(r'<[^>]+>', '', archive_title.group(1))).split())
+                if normalized_title != meta.get("title"):
+                    errors.append(f"Title mismatch between Talks.html and {target}")
+            page = ROOT / target
+            if not page.is_file():
+                errors.append(f"Talk abstract page missing: {target}")
+            else:
+                content = page.read_text(encoding="utf-8")
+                if "layout: talk-abstract" not in content or f'talk_key: "{key}"' not in content:
+                    errors.append(f"Talk page does not use shared layout/metadata: {target}")
+        for key, meta in talk_meta.items():
+            if not (ROOT / f"{key}.html").is_file():
+                errors.append(f"Orphaned talk metadata, page missing: {key}.html")
+            if not meta.get("title") or not meta.get("date"):
+                errors.append(f"Missing title/date for talk: {key}")
+            for resource in meta.get("resources", []):
+                if resource.get("url"):
+                    check_path(talk_meta_path, resource["url"])
+    except (ValueError, KeyError, TypeError) as exc:
+        errors.append(f"Invalid talk metadata: {exc}")
+
 if errors:
     print(f"{len(errors)} site error(s):")
     for err in errors:

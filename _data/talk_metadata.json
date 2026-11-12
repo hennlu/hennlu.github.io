@@ -1,0 +1,463 @@
+{
+  "kansas-10-november-2026": {
+    "date": "10 November 2026",
+    "title": "Commutativity of the nilpotent CoHAs of the affine plane",
+    "event": "M-Seminar, Kansas State University (online)",
+    "event_url": "https://www.math.ksu.edu/research/research-centers/m-center/seminars.html",
+    "resources": [
+      {
+        "url": "https://www.math.ksu.edu/research/research-centers/m-center/hennecart_nov26_2.pdf",
+        "label": "lecture notes (PDF)"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCTiMr5vapeGsVFgW2Pio7NA",
+        "label": "M-Seminar video channel"
+      }
+    ]
+  },
+  "kansas-9-november-2026": {
+    "date": "9 November 2026",
+    "title": "A (failed?) attempt at the Deligne-Simpson problem",
+    "event": "M-Seminar, Kansas State University (online)",
+    "event_url": "https://www.math.ksu.edu/research/research-centers/m-center/seminars.html",
+    "resources": [
+      {
+        "url": "https://www.math.ksu.edu/research/research-centers/m-center/hennecart_nov26_1.pdf",
+        "label": "lecture notes (PDF)"
+      },
+      {
+        "url": "https://www.youtube.com/channel/UCTiMr5vapeGsVFgW2Pio7NA",
+        "label": "M-Seminar video channel"
+      }
+    ]
+  },
+  "graal-lille-october-2026": {
+    "date": "15 October 2026",
+    "title": "The BPS decomposition theorem",
+    "event": "GRAAL meeting (Amiens–Lille), Université de Lille",
+    "event_url": "https://math.univ-lille.fr/detail-actu/journee-graal-geometrie-representations-algebre-amiens-lille-a-lille",
+    "resources": []
+  },
+  "oxford2026": {
+    "date": "9 September 2026",
+    "title": "Global BPS Lie algebra and tautological generation",
+    "event": "Oxford Algebraic Geometry Days , Mathematical Institute, University of Oxford",
+    "event_url": "https://sites.google.com/view/oxfordalgebraicgeometrydays/home?authuser=0",
+    "resources": []
+  },
+  "kunming2026": {
+    "date": "13 August 2026",
+    "title": "The BPS sheaf for preprojective algebras and moduli of Higgs bundles",
+    "event": "Workshop on Geometric representation theory and related topics , Tianyuan Mathematics Research Center",
+    "event_url": "http://tianyuan.amss.ac.cn/aac/info/2026/146237.html",
+    "resources": []
+  },
+  "angers2026": {
+    "date": "18 June 2026",
+    "title": "Weyl group actions on quiver varieties",
+    "event": "Derived Algebraic Geometry, CoHAs and Operads, Université d'Angers",
+    "event_url": "https://math.univ-angers.fr/~bozec/rencontre1.html",
+    "resources": []
+  },
+  "darmstadt": {
+    "date": "22 May 2026",
+    "title": "The BPS sheaf for preprojective algebras and moduli of Higgs bundles",
+    "event": "Seminar on Arithmetic Geometry, University of Darmstadt, Germany",
+    "event_url": "https://www.mathematik.tu-darmstadt.de/algebra/forschung_algebra/forschungsseminare/seminar_on_arithmetic_geometry/sag.en.jsp",
+    "resources": []
+  },
+  "edinburgh-april2026": {
+    "date": "22 April 2026",
+    "title": "The BPS sheaf for preprojective algebras and moduli of Higgs bundles",
+    "event": "EDGE Seminar, University of Edinburgh, UK",
+    "event_url": "https://hodge.maths.ed.ac.uk/?page_id=36",
+    "resources": []
+  },
+  "taipei2026": {
+    "date": "14 January 2026",
+    "title": "The BPS decomposition theorem",
+    "event": "Academia Sinica, Taipei, Taiwan",
+    "event_url": "https://www.math.sinica.edu.tw/f59addca-1da6-47fd-9bb8-18d087da6088/posts/15748",
+    "resources": []
+  },
+  "sanya2026": {
+    "date": "9 January 2026",
+    "title": "The BPS decomposition theorem",
+    "event": "Conference: Geometric representation theory and automorphic forms, 5-9 January 2026, Sanya, China",
+    "event_url": "https://tsimf.tsinghua.edu.cn/info/1067/1024.htm",
+    "resources": []
+  },
+  "montpellier": {
+    "date": "17 December 2025",
+    "title": "Le théorème de décomposition BPS",
+    "event": "Journée sur les champs algébriques, Montpellier",
+    "event_url": "https://imag.umontpellier.fr/~brochard/recherche/journee_GA_2025.html",
+    "resources": [
+      {
+        "url": "montpellier17122025.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "Paris_17102025": {
+    "date": "17 October 2025",
+    "title": "Le faisceau BPS pour les algèbres préprojectives : supports et systèmes locaux",
+    "event": "Séminaire Groupes, Représentation et Géométrie, Paris",
+    "event_url": "https://www.imj-prg.fr/gestion/evenement/affEvenement/59",
+    "resources": [
+      {
+        "url": "Paris-17-octobre 2025.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "intro_coha_septembre_2025": {
+    "date": "11 September 2025",
+    "title": "Introduction aux algèbres de Hall cohomologiques",
+    "event": "LAMFA, Amiens",
+    "event_url": "",
+    "resources": [
+      {
+        "url": "intro_coha_septembre_2025.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "iasi-September-2025": {
+    "date": "2 September 2025",
+    "title": "Cohomological integrality for symmetric quotient stacks",
+    "event": "The Algebraic and Arithmetic Geometry Week in Iaşi (AAG 2025), Iaşi, Romania",
+    "event_url": "https://www.math.uaic.ro/~aag2025/index.php",
+    "resources": [
+      {
+        "url": "iasi-September-2025.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "LesDiablerets-August-2025": {
+    "date": "12 August 2025",
+    "title": "Langlands duality for character varieties via BPS cohomology",
+    "event": "Workshop Representations, Moduli and Duality, Swissmap Research Station, Les Diablerets",
+    "event_url": "https://indico.global/event/9656/page/4287-workshop-in-les-diablerets-1108-1508",
+    "resources": [
+      {
+        "url": "LesDiablerets-August-2025.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "Clermont-July2025": {
+    "date": "11 July 2025",
+    "title": "Purity of the moduli stack of G-Higgs bundles on a smooth projective curve",
+    "event": "Conference Geometry and Representation Theory around the Langlands programs, Clermont-Ferrand",
+    "event_url": "https://indico.math.cnrs.fr/event/12333/",
+    "resources": [
+      {
+        "url": "Clermont-July-2025.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "SIMIS-June2025": {
+    "date": "23 June 2025",
+    "title": "Cohomological Mackey formula for representations of reductive groups",
+    "event": "Representation Theory Seminar, SIMIS, Shanghai",
+    "event_url": "",
+    "resources": []
+  },
+  "KIAS-June2025": {
+    "date": "16 June 2025",
+    "title": "Cohomological Mackey formula for representations of reductive groups",
+    "event": "Workshop on moduli spaces, virtual invariants and shifted symplectic structures 2025, KIAS, Seoul",
+    "event_url": "http://events.kias.re.kr/h/WMV25/?pageNo=5919",
+    "resources": []
+  },
+  "LAMFA-June-2025": {
+    "date": "6 June 2025",
+    "title": "Comptage de triplets commutants dans les groupes de matrices",
+    "event": "Journée du LAMFA 2025, Logis du Roy, Amiens",
+    "event_url": "https://indico.math.cnrs.fr/event/13848/",
+    "resources": []
+  },
+  "IHPMay2025": {
+    "date": "26 May 2025",
+    "title": "Cohomological Mackey formula for representations of reductive groups",
+    "event": "Séminaire d'algèbre, IHP, Paris",
+    "event_url": "https://researchseminars.org/seminar/paris-algebra-seminar",
+    "resources": [
+      {
+        "url": "IHPMay2025.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "LyonApril2025": {
+    "date": "16 April 2025",
+    "title": "Intégralité cohomologique pour les représentations des groupes réductifs",
+    "event": "Séminaire d'algèbre, ICJ, Université de Lyon 1, Lyon",
+    "event_url": "https://indico.math.cnrs.fr/event/13898/",
+    "resources": [
+      {
+        "url": "LyonApril2025.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "Tokyo-March2025": {
+    "date": "11 March 2025",
+    "title": "Cohomological integrality for symmetric quotient stacks",
+    "event": "MS Seminar, IPMU, Kashiwa (Japan)",
+    "event_url": "https://db.ipmu.jp/seminar/?seminar_id=3332",
+    "resources": [
+      {
+        "url": "ipmu-march-2025 .pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "Amiens-December2024": {
+    "date": "12 December 2024",
+    "title": "Intégralité cohomologique pour les représentations des groupes réductifs",
+    "event": "Séminaire GAT, UPJV, Amiens",
+    "event_url": "https://www.lamfa.u-picardie.fr/GAT/seminaire",
+    "resources": [
+      {
+        "url": "Amiens12-2024.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "Lausanne-November2024": {
+    "date": "6 November 2024",
+    "title": "Cohomological integrality for symmetric quotient stacks",
+    "event": "Groups, Arithmetic and Algebraic Geometry Seminar, EPFL, Lausanne",
+    "event_url": "",
+    "resources": [
+      {
+        "url": "EPFLNovember6th2024.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "PGColloquium-Edinburgh-October2024": {
+    "date": "11 October 2024",
+    "title": "Cohomological integrality isomorphisms",
+    "event": "PG Colloquium, Edinburgh",
+    "event_url": "",
+    "resources": [
+      {
+        "url": "PGColloquium2024.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "ImperialOctober2024": {
+    "date": "8 October 2024",
+    "title": "Cohomological integrality for symmetric quotient stacks",
+    "event": "MAGIC Seminar/Rep theory seminar, Imperial College, London",
+    "event_url": "https://www.imperial.ac.uk/geometry/seminars/magic-seminar/",
+    "resources": [
+      {
+        "url": "Imperial-8October2024.pdf",
+        "label": "notes"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Umim2ekLtfc",
+        "label": "video 1"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=UZU-Cvupve8",
+        "label": "video 2"
+      }
+    ]
+  },
+  "IRMASeptember2024": {
+    "date": "12 September 2024",
+    "title": "Intégralité cohomologique pour les représentations des groupes réductifs",
+    "event": "Séminaire Arithmétique et géométrie algébrique, IRMA, Strasbourg",
+    "event_url": "https://irma.math.unistra.fr/seminaires/seminaire-arithmetique-et-geometrie-algebrique.html#",
+    "resources": [
+      {
+        "url": "Strasbourg12sept2024.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "UtrechtJune2024": {
+    "date": "26 June 2024",
+    "title": "Cohomological integrality isomorphisms",
+    "event": "AG Seminar, Utrecht",
+    "event_url": "https://utrechtgeometrycentre.nl/calendar/",
+    "resources": [
+      {
+        "url": "UtrechtJune2024.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "SLMathApril2024": {
+    "date": "2 April 2024",
+    "title": "The BPS sheaves and quiver varieties",
+    "event": "NAG Geometric Representation theory seminar, SLMath, Berkeley",
+    "event_url": "https://www.slmath.org/programs/356",
+    "resources": [
+      {
+        "url": "SLmathApril2nd.pdf",
+        "label": "notes"
+      },
+      {
+        "url": "https://vimeo.com/930305273",
+        "label": "Video"
+      }
+    ]
+  },
+  "ParisMarch2024": {
+    "date": "22 March 2024",
+    "title": "Le faisceau BPS pour les espaces de modules",
+    "event": "Séminaire Groupes, Représentations, Géométrie, Paris",
+    "event_url": "https://www.imj-prg.fr/gestion/evenement/affSeance/9683",
+    "resources": [
+      {
+        "url": "ParisMarch2024.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "LA2024": {
+    "date": "7 March 2024",
+    "title": "Counting representations of algebras",
+    "event": "Colloquium, UCLA, Los Angeles",
+    "event_url": "https://secure.math.ucla.edu/seminars/display.php?&id=837522",
+    "resources": [
+      {
+        "url": "ColloquiumLosAngeles.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "Mseminar": {
+    "date": "19, 21, 22, 23 February 2024",
+    "title": "Cohomological Hall algebras of 2-Calabi-Yau categories and applications",
+    "event": "M-seminar, Kansas State University",
+    "event_url": "https://researchseminars.org/seminar/M-seminar",
+    "resources": [
+      {
+        "url": "M-seminar.pdf",
+        "label": "Plan of the lectures"
+      },
+      {
+        "url": "Mseminar1.pdf",
+        "label": "Lecture 1"
+      },
+      {
+        "url": "Mseminar2.pdf",
+        "label": "Lecture 2"
+      },
+      {
+        "url": "Mseminar3.pdf",
+        "label": "Lecture 3"
+      },
+      {
+        "url": "Mseminar4.pdf",
+        "label": "Lecture 4"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=6ZxVF1X-XAc&t=2s",
+        "label": "Recording 1"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=SzxhVO8mgJo&t=1s",
+        "label": "Recording 2"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=VCKZrMKaIYA&t=5s",
+        "label": "Recording 3"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=jMNSaParW3s",
+        "label": "Recording 4"
+      }
+    ]
+  },
+  "Liverpool2023": {
+    "date": "23 November 2023",
+    "title": "BPS Lie algebras and action on the cohomology of Nakajima quiver varieties",
+    "event": "Algebraic geometry seminar, Liverpool",
+    "event_url": "https://www.liverpool.ac.uk/mathematical-sciences/seminars/pure-mathematics/",
+    "resources": [
+      {
+        "url": "Liverpool2023.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "Caen2023": {
+    "date": "21 November 2023",
+    "title": "L'algèbre de Lie BPS",
+    "event": "Séminaire d'algèbre et de géométrie, Caen",
+    "event_url": "https://www.lmno.cnrs.fr/sem/AG",
+    "resources": [
+      {
+        "url": "Caen2023.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "Lausanne2023": {
+    "date": "8 November 2023",
+    "title": "Nonabelian Hodge isomorphisms for cohomological Hall algebras",
+    "event": "Groups, Arithmetic and Algebraic Geometry Seminar, EPFL, Lausanne",
+    "event_url": "https://calendar.google.com/calendar/u/0/embed?mode=AGENDA&height=600&wkst=2&bgcolor=%23FFFFFF&src=t36it03v52cus2detrvinlgk18@group.calendar.google.com&color=%235F6B02&ctz=Europe/Zurich",
+    "resources": [
+      {
+        "url": "Lausanne112023.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "HongKong2023": {
+    "date": "16 October 2023",
+    "title": "Cohomological integrality for 2-Calabi-Yau categories",
+    "event": "Algebra and Geometry Seminar (HKUST), Hong-Kong (online)",
+    "event_url": "https://researchseminars.org/seminar/HKUST-AG",
+    "resources": [
+      {
+        "url": "HongKong-16-October-2023.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "Dublin2023": {
+    "date": "28 September 2023",
+    "title": "Cohomological integrality for 2-Calabi-Yau categories",
+    "event": "Dublin Mathematics Colloquium",
+    "event_url": "https://www.maths.tcd.ie/~dmc/",
+    "resources": [
+      {
+        "url": "DublinSept2023.pdf",
+        "label": "notes"
+      }
+    ]
+  },
+  "pisa-coha-2025": {
+    "date": "1, 3 and 4 July 2025",
+    "title": "Cohomological Hall algebras — exercise and research sessions",
+    "event": "Summer School on Enumerative Geometry and Geometric Representation Theory, Università di Pisa",
+    "event_url": "https://events.dm.unipi.it/event/200/",
+    "resources": [
+      {
+        "label": "Exercise session I (PDF)",
+        "url": "/ExercisesessionsPisaI.pdf"
+      },
+      {
+        "label": "Exercise session II (PDF)",
+        "url": "/ExercisesessionsPisaII.pdf"
+      },
+      {
+        "label": "Official programme (PDF)",
+        "url": "https://events.dm.unipi.it/event/200/program.pdf"
+      }
+    ]
+  }
+}
