@@ -2,8 +2,8 @@
   "kansas-10-november-2026": {
     "date": "10 November 2026",
     "title": "Commutativity of the nilpotent CoHAs of the affine plane",
-    "event": "M-Seminar, Kansas State University (online)",
-    "event_url": "https://www.math.ksu.edu/research/research-centers/m-center/seminars.html",
+    "event": "M-Seminar, Kansas State University (online) — Lecture 2",
+    "event_url": "https://events.k-state.edu/event/m-seminar-commutativity-of-the-nilpotent-cohas-of-the-affine-plane",
     "resources": [
       {
         "url": "https://www.math.ksu.edu/research/research-centers/m-center/hennecart_nov26_2.pdf",
@@ -12,14 +12,18 @@
       {
         "url": "https://www.youtube.com/channel/UCTiMr5vapeGsVFgW2Pio7NA",
         "label": "M-Seminar video channel"
+      },
+      {
+        "url": "/kansas-9-november-2026.html",
+        "label": "Lecture 1 — A (failed?) attempt at the Deligne-Simpson problem"
       }
     ]
   },
   "kansas-9-november-2026": {
     "date": "9 November 2026",
     "title": "A (failed?) attempt at the Deligne-Simpson problem",
-    "event": "M-Seminar, Kansas State University (online)",
-    "event_url": "https://www.math.ksu.edu/research/research-centers/m-center/seminars.html",
+    "event": "M-Seminar, Kansas State University (online) — Lecture 1",
+    "event_url": "https://events.k-state.edu/event/m-seminar-a-failed-attempt-at-the-deligne-simpson-problem",
     "resources": [
       {
         "url": "https://www.math.ksu.edu/research/research-centers/m-center/hennecart_nov26_1.pdf",
@@ -28,6 +32,10 @@
       {
         "url": "https://www.youtube.com/channel/UCTiMr5vapeGsVFgW2Pio7NA",
         "label": "M-Seminar video channel"
+      },
+      {
+        "url": "/kansas-10-november-2026.html",
+        "label": "Lecture 2 — Commutativity of the nilpotent CoHAs of the affine plane"
       }
     ]
   },
