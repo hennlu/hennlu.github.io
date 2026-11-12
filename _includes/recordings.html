@@ -4,10 +4,16 @@
   <li>
     <p class="paper-meta">{% if page.lang == 'fr' %}{{ item.date_fr }}{% else %}{{ item.date_en }}{% endif %} · {{ item.event | escape }}</p>
     <div class="paper-title">{{ item.title | escape }}</div>
+    {% if item.recording_status == 'unverified' %}
+    <p class="muted">{% if page.lang == 'fr' %}Lien vers l'enregistrement individuel non confirmé.{% else %}Direct recording link not yet verified.{% endif %}</p>
+    {% endif %}
     <div class="paper-links">
       {% for video in item.videos %}
       <a href="{{ video.url }}">{% if page.lang == 'fr' %}{{ video.label_fr | escape }}{% else %}{{ video.label_en | escape }}{% endif %} ↗</a>
       {% endfor %}
+      {% if item.channel %}<a href="{{ item.channel }}">{% if page.lang == 'fr' %}Chaîne YouTube du M-Seminar{% else %}M-Seminar YouTube channel{% endif %} ↗</a>{% endif %}
+      {% if item.abstract %}<a href="{{ item.abstract | relative_url }}">{% if page.lang == 'fr' %}Résumé{% else %}Abstract{% endif %}</a>{% endif %}
+      {% if item.notes %}<a href="{{ item.notes }}">{% if page.lang == 'fr' %}Notes (PDF){% else %}Lecture notes (PDF){% endif %} ↗</a>{% endif %}
     </div>
   </li>
   {% endfor %}
