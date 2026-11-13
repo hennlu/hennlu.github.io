@@ -16,37 +16,5 @@ jobs:
           python-version: '3.12'
       - name: Validate local files and metadata
         run: python3 scripts/check_site.py
-      - name: Read arXiv metadata for new preprint (temporary)
-        continue-on-error: true
-        run: |
-          python3 - <<'PY'
-          import urllib.request, html, re
-          urls = [
-              "https://arxiv.org/abs/2611.16036",
-              "https://export.arxiv.org/api/query?id_list=2611.16036",
-          ]
-          for url in urls:
-              try:
-                  request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Academic website bibliographic lookup)"})
-                  with urllib.request.urlopen(request, timeout=15) as res:
-                      page = res.read().decode("utf-8", "replace")
-                  print("SOURCE:", url, "BYTES:", len(page))
-                  matches = [m for m in re.findall(r"<meta[^>]+>", page, re.I) if any(k in m.lower() for k in ("citation_title", "citation_author", "citation_date", "citation_arxiv_id"))]
-                  for meta in matches[:20]:
-                      print("META:", html.unescape(meta))
-                  if "atom" in page[:150]:
-                      from xml.etree import ElementTree as ET
-                      root = ET.fromstring(page)
-                      ns = {"a": "http://www.w3.org/2005/Atom"}
-                      for p in root.findall("a:entry", ns):
-                          print("TITLE:", p.findtext("a:title", namespaces=ns))
-                          print("AUTHORS:", [x.findtext("a:name", namespaces=ns) for x in p.findall("a:author", ns)])
-                          print("SUMMARY:", p.findtext("a:summary", namespaces=ns))
-                  if matches or "<entry>" in page:
-                      break
-                  print("HTML SNIPPET:", page[:500])
-              except Exception as exc:
-                  print(type(exc).__name__, str(exc))
-          PY
       - name: Build static site with GitHub Pages Jekyll
         uses: actions/jekyll-build-pages@v1
