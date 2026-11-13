@@ -31,7 +31,7 @@ jobs:
                   with urllib.request.urlopen(request, timeout=15) as res:
                       page = res.read().decode("utf-8", "replace")
                   print("SOURCE:", url, "BYTES:", len(page))
-                  matches = re.findall(r'<meta[^>]+name=["\\'](?:citation_title|citation_author|citation_date|citation_arxiv_id)["\\'][^>]+>', page, re.I)
+                  matches = [m for m in re.findall(r"<meta[^>]+>", page, re.I) if any(k in m.lower() for k in ("citation_title", "citation_author", "citation_date", "citation_arxiv_id"))]
                   for meta in matches[:20]:
                       print("META:", html.unescape(meta))
                   if "atom" in page[:150]:
