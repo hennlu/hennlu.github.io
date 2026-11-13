@@ -1,0 +1,17 @@
+% !TeX program = pdflatex
+% A4 paysage recto verso, retourner sur bords courts.
+% Recto : page 4 | page 1 ; verso : page 2 | page 3.
+\documentclass[a4paper,landscape]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,landscape,margin=0pt]{geometry}
+\usepackage{graphicx,tikz}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\newcommand{\placepage}[2]{\begin{tikzpicture}[remember picture,overlay]\node[anchor=center,inner sep=0] at ([xshift=#1,yshift=0mm]current page.west){\includegraphics[page=#2,height=198mm,keepaspectratio]{programme_bach_4_pages_A5.pdf}};\end{tikzpicture}}
+\newcommand{\spread}[2]{\null\placepage{74.25mm}{#1}\placepage{222.75mm}{#2}}
+\begin{document}
+\spread{4}{1}
+\newpage
+\spread{2}{3}
+\end{document}
